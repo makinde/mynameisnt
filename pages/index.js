@@ -1,12 +1,6 @@
 import combos from '../combos';
 
 export default function Home({ name }) {
-  if (!name || !combos[name]) {
-    const names = Object.keys(combos);
-    const randomIndex = Math.floor(Math.random() * names.length);
-    name = names[randomIndex];
-  }
-
   const capitalizedName = name[0].toUpperCase() + name.slice(1);
   const facebookId = combos[name];
 
@@ -18,4 +12,12 @@ export default function Home({ name }) {
       </a>
     </center>
   )
+}
+
+export function getServerSideProps(ctx) {
+  const names = Object.keys(combos);
+  const randomIndex = Math.floor(Math.random() * names.length);
+  const name = names[randomIndex];
+
+  return { props: { name } };
 }
