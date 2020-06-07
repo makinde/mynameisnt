@@ -8,7 +8,7 @@ export default function Home({ name }) {
     <center>
       <h1 style={{fontFamily: 'Helvetica', margin: '30px 0'}}>My Name Isn't {capitalizedName}</h1>
       <a href={`http://www.facebook.com/${facebookId}`}>
-        <img src={`http://graph.facebook.com/${facebookId}/picture?type=large`} />
+        <img src={`https://graph.facebook.com/${facebookId}/picture?type=large`} />
       </a>
     </center>
   )
