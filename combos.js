@@ -28,4 +28,5 @@ export default {
   awara : 519570964,
   ywina : 12951,
   kathy: 1335180277,
+  katiejchan: 1335180277,
 };
