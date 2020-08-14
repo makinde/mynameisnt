@@ -2,7 +2,7 @@ import combos from '../combos';
 
 export default function Home({ name }) {
   const capitalizedName = name[0].toUpperCase() + name.slice(1);
-  const facebookId = combos[name];
+  const facebookId = combos[name.toLowerCase()];
 
   return (
     <center>
