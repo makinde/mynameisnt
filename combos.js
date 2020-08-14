@@ -27,4 +27,5 @@ export default {
   osama : 6815841748,
   awara : 519570964,
   ywina : 12951,
+  kathy: 1335180277,
 };
