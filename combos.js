@@ -29,4 +29,5 @@ export default {
   ywina : 12951,
   kathy: 1335180277,
   katiejchan: 1335180277,
+  KatieJChan: 1335180277,
 };
